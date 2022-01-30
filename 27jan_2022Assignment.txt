@@ -1,0 +1,227 @@
+leap year program 
+
+package Pr;
+import java.util.Scanner;
+
+public class practi {
+	
+	
+	public static void main(String[] args) {
+	
+		Scanner sc=new Scanner(System.in);
+		int Year=sc.nextInt();
+		if(Year % 4==0) {
+			System.out.println("Its leap year");
+		}
+		else {
+		System.out.println("Not leap year");	
+		}
+		}
+}
+
+
+________________________________________________________________________________________
+-----------------------------------------------------------------------------------------
+
+Arthematic progression series
+
+package Pr;
+import java.util.Scanner;
+
+public class practi {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("enter number: ");
+        int num = scan.nextInt();
+
+        int count = 0;
+        for (int i = 1; count < num; i++) {
+            int series = 3 * i + 2;
+            if (series % 4 != 0) {
+                System.out.print(series + " ");
+                count++;
+            }
+
+        }
+    }
+}
+_________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------
+
+Distance between two points
+
+package Pr;
+import java.util.Scanner;
+
+public class practi{
+    public static void main(String arg[]){   
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("enter x1 point");
+        int x1 = scan.nextInt();
+
+        System.out.println("enter y1 point");
+        int y1 = scan.nextInt();
+
+        System.out.println("enter x2point");
+        int x2 = scan.nextInt();
+
+        System.out.println("enter y2 point");
+        int y2 = scan.nextInt();
+
+        distance(x1,x2,y1,y2);
+        
+        scan.close();
+
+    }
+
+    public static void distance(int x1,int x2, int y1, int y2){
+        double distance;
+
+        distance = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+
+        System.out.println("the distance between" + " ( " + x1 + " , " + y1 + " ) ," + " ( " + x2 + " , " + y2 + " )  = " + distance);
+
+    }
+
+}
+
+________________________________________________________________________________________________________________________________________________
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Compound intrest
+
+package Pr;
+import java.util.Scanner;
+
+public class practi{
+
+    public static void main(String args[]) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter principle:  ");
+        double principle = scan.nextDouble();
+
+        System.out.println("Enter rate:  ");
+        double rate = scan.nextDouble();
+
+        System.out.println("Enter time:  ");
+        double time = scan.nextDouble();
+
+        compoundInterest(principle, rate, time);
+
+    }
+
+    public static void compoundInterest(double principle, double rate, double time) {
+        double CI = principle * (Math.pow((1 + rate / 100), time));
+
+        System.out.println("Compound Interest is " + CI);
+    }
+}
+
+_________________________________________________________________________________________________________________________________________
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Permutation and combination
+
+
+package Pr;
+import java.util.Scanner;
+
+public class practi{
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter n:  ");
+        int n = scan.nextInt();
+
+        System.out.println("Enter r:  ");
+        int r = scan.nextInt();
+
+        int comb, per;
+        per = factorial(n) / factorial(n-r);
+        System.out.println("Permutation: " + per);
+        comb = factorial(n) / (factorial(r) * factorial(n-r));
+        System.out.println("Combination: " + comb);
+
+    }
+       
+     
+    public static int factorial(int n) {
+          int fact = 1;
+          int i = 1;
+          while(i <= n) {
+             fact *= i;
+             i++;
+          }
+          return fact;
+       }
+
+       
+    }
+
+__________________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------------
+
+Reverse a number
+
+package Pr;
+import java.util.Scanner;
+
+public class practi{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+    
+        System.out.println("enter number: ");
+        int number = scan.nextInt();
+        
+        int reverse = 0;
+        while (number != 0) {
+            int remainder = number % 10;
+            reverse = reverse * 10 + remainder;
+            number = number / 10;
+        }
+        System.out.println("The reverse is: " + reverse);
+
+    }
+
+}
+
+
+___________________________________________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------------------------------------
+
+sum of even and odd digit
+
+
+
+package Pr;
+import java.util.Scanner;
+
+public class practi{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+    
+        System.out.println("enter number: ");
+        int number = scan.nextInt();
+        
+        int odd = 0;
+        int even = 0;
+        while (number > 0)
+        {
+            if ((number % 10) % 2 == 0)
+            odd = odd + number % 10;
+            else
+            even = even + number % 10;
+            number = number / 10;
+        }
+        System.out.print("even : " + odd + " odd : " + even);
+
+    }
+
+}
+

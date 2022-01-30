@@ -1,0 +1,62 @@
+Program For calculating power of two number
+
+package Pr;
+
+import java.util.Scanner;
+
+public class PR{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("enter base : ");
+        int b = scan.nextInt();
+
+        System.out.println("enter power: ");
+        int exp = scan.nextInt();
+
+        long result = 1;
+
+        while (exp != 0) {
+            result *= b;
+            exp=exp-1;
+        }
+
+        System.out.println("Power is : " + result);
+        scan.close();
+    }
+
+}
+
+
+______________________________________________________________________________________________________
+--------------------------------------------------------------------------------------------------------
+
+Check prime number or not in java
+
+package Pr;
+
+import java.util.Scanner;
+
+public class PR{
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("enter number : ");
+        int num = scan.nextInt();
+        boolean flag = false;
+        for (int i = 2; i <= num / 2; ++i) {
+            if (num % i == 0) {
+                flag = true;
+                break;
+            }
+        }
+
+        if (!flag)
+            System.out.println(" prime number "+num);
+        else
+            System.out.println("not a prime number " +num);
+
+        scan.close();
+    }
+}

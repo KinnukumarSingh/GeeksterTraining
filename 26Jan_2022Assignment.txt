@@ -1,0 +1,108 @@
+Factorial of number program
+
+
+package Pr;
+
+import java.util.Scanner;
+
+public class PR{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("enter number : ");
+        int n = scan.nextInt();
+
+        factorial(n);
+
+        scan.close();
+    }
+
+    static void factorial(int n) {
+        int i = n, fact = 1;
+        if (n == 0) {
+            System.out.println("the factorial of " + n + " is -> 0");
+        } else {
+
+            while (n / i != n) {
+                fact = fact * i;
+                i--;
+            }
+            System.out.println("the factorial of " + n + " is -> " + fact);
+
+        }
+
+    }
+}
+
+
+__________________________________________________________________________________________________________
+---------------------------------------------------------------------------------------------------------------
+
+Java program for sum of number till n
+
+
+package Pr;
+
+import java.util.Scanner;
+
+public class PR{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("enter number");
+        int number = scan.nextInt();
+        int i = 1, sum = 0;
+        while (i <= number) {
+            sum = sum + i;
+            i++;
+        }
+        System.out.println("Sum of Numbers is = " + sum);
+
+    }
+}
+
+________________________________________________________________________________________________________________________
+----------------------------------------------------------------------------------------------------------------
+Swaping of two number in java
+
+
+package Pr;
+
+import java.util.Scanner;
+
+public class PR{
+    public static void main(String[] args) {
+        int x, y, t;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of X and Y");
+        x = sc.nextInt();
+        y = sc.nextInt();
+
+        t = x;
+        x = y;
+        y = t;
+        System.out.println("swapping: " + x + "   " + y);
+      
+    }
+}
+
+________________________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------------------------
+
+Table printing in java
+
+
+package Pr;
+
+import java.util.Scanner;
+
+public class PR{
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter number:");
+        int n = s.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " * " + i + " = " + n * i);
+        }
+    }
+}

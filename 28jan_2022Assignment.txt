@@ -1,0 +1,122 @@
+Diamond shape patter
+
+
+
+package Pr;
+import java.util.Scanner;
+
+public class practi {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number:  ");
+        int input = scan.nextInt();
+
+        printDiamond(input);
+    }
+
+    static void printDiamond(int n) {
+        int space = n - 1;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < space; j++)
+                System.out.print(" ");
+
+            for (int j = 0; j <= i; j++)
+                System.out.print("* ");
+
+            System.out.print("\n");
+            space--;
+        }
+
+        space = 0;
+
+        for (int i = n; i > 0; i--) {
+            for (int j = 0; j < space; j++)
+                System.out.print(" ");
+
+            for (int j = 0; j < i; j++)
+                System.out.print("* ");
+
+            System.out.print("\n");
+            space++;
+        }
+    }
+
+}
+
+
+_________________________________________________________________________________________________
+---------------------------------------------------------------------------------------------------------
+
+Left Triangle start pattern
+
+package Pr;
+import java.util.Scanner;
+
+public class practi{
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number:  ");
+        int input = scan.nextInt();
+
+        leftTraingle(input);
+
+
+    }
+
+    public static void leftTraingle(int k) {
+        int a, b;
+
+        for (a = 0; a < k; a++) {
+
+            for (b = 2 * (k - a); b >= 0; b--) {
+                System.out.print(" ");
+            }
+
+            for (b = 0; b <= a; b++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+    }
+
+}
+
+
+_____________________________________________________________________________________________
+---------------------------------------------------------------------------------------------
+
+
+Pyramid pttern
+
+
+package Pr;
+import java.util.Scanner;
+
+public class practi {
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number:  ");
+        int input = scan.nextInt();
+
+        printTriagle(input);
+
+    }
+
+    public static void printTriagle(int n) {
+        for (int i = 0; i < n; i++) {
+
+            for (int j = n - i; j > 1; j--) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+    }
+
+}
