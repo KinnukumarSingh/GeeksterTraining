@@ -1,0 +1,101 @@
+WAP to caluclate no. of digits in a number entered by user
+
+
+package Pr;
+import java.util.Scanner;
+public class Distance {
+
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int count =0;
+		while(n !=0) {
+			n=n/10;
+			++count;
+		}
+		System.out.println(count);
+	}
+
+	}
+
+
+________________________________________________________________________________________________________________
+----------------------------------------------------------------------------------------------------------------
+Apply do while loop to calculat factorial of a number such that, program asks  user, if he wants to continue, if yes, program should run again
+
+
+package Pr;
+import java.util.Scanner;
+public class Distance {
+ public static int factorial(int n) {
+	 int fact =1, i=1;
+	 while (i<=n) {
+		 fact =fact*i;
+		 i++;
+	 }
+	return fact;
+	
+ }
+	
+	public static void main(String[] args) {
+		int option;
+		do {
+		Scanner sc=new Scanner(System.in);
+		
+		Distance d=new Distance();
+		
+		System.out.println("Enter number");
+		int n=sc.nextInt();
+		int fac=factorial(n);
+		System.out.println(fac);
+		System.out.println("Do you want to continue press 1 for yes and 2 for no");
+		 option=sc.nextInt();
+		
+		
+		}while(option==1);
+		
+	}
+
+	}
+
+___________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------
+
+WAP to creat a fuction that check if no. is odd or even. call this function from main method"
+
+
+
+package Pr;
+import java.util.Scanner;
+public class Distance {
+ public static int oddeven(int n) {
+	 
+	 if(n%2==0) {
+		System.out.println(n+" is even number "); 
+		return n;
+	 }
+	 else {
+		 System.out.println(n+" is odd number "); 
+			return n;
+	 }
+	
+	
+ }
+	
+	public static void main(String[] args) {
+		int op;
+		do {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter number ");
+		int n=sc.nextInt();
+		int oe=oddeven(n);
+		System.out.println("Do you want to continue 1 for yes ans 2 for no");
+		op=sc.nextInt();
+		}while(op==1);
+		
+	}
+
+	}
+
+

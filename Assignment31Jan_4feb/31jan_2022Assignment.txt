@@ -1,0 +1,221 @@
+1.Write a program to print the product of the decimal and int numbers ex: 8.2 and 6
+
+package Pr;
+import java.io.InputStream;
+import java.util.Scanner;
+public class Distance {
+	
+
+	//  Write a program to print the product of the decimal and Int number ex: 8.2*6
+	
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+
+	System.out.println("Enter first Integer no for multiplcation");
+	int firstnum = sc.nextInt();
+	System.out.println("Enter Second decimal no for multiplcation");
+	double secondnum = sc.nextDouble();
+	double result=(double)firstnum * secondnum;//explicit conversion
+	System.out.println("So multiplcation of two number will be = "+result);
+	 		
+	}	
+	}
+
+_______________________________________________________________________________________________________________________
+-------------------------------------------------------------------------------------------------------------------------------
+
+2.Print the ASCII value of any character user proides
+
+package Pr;
+import java.io.InputStream;
+import java.util.Scanner;
+public class Distance {
+	
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any character");
+		char ch = sc.next().charAt(0);
+		int a =ch;//implicit conversion
+		System.out.println("User Entered: "+ ch +" whose ASCII value is "+ a);
+ 		
+	}	
+	}
+
+_______________________________________________________________________________________________________________________________________
+----------------------------------------------------------------------------------------------------------------------------
+
+
+3.Write a program to add 3 to the ASCII value of the any character user proides  and print the equivalent character.
+
+
+package Pr;
+import java.io.InputStream;
+import java.util.Scanner;
+public class Distance {
+	
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		 int sum=0;
+    	System.out.println("Enter first  character");
+		char ch1 = sc.next().charAt(0);
+		System.out.println("Enter second  character");
+		char ch2 = sc.next().charAt(0);
+		System.out.println("Enter third  character");
+		char ch3 = sc.next().charAt(0);
+		sum = (int)ch1+ch2+ch3 ;
+		char charactervalue = (char)sum;
+		System.out.println("the summession of the ASCII value of all the character = "+ sum);
+		System.out.println("So "+ sum +" is the ASCII value of " + charactervalue);
+		
+ 		
+	}	
+	}
+
+______________________________________________________________________________________________________________________________________________
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+4.Write a Java program to convert temperature from Fahrenheit to Celsius degree.
+
+package Pr;
+import java.io.InputStream;
+import java.util.Scanner;
+public class Distance {
+	
+	
+	
+	//Write a program to convert Fahrenheit into Celsius.
+	public static void main(String[] args) {
+	 Scanner sc=new Scanner(System.in);
+	 System.out.println("Enter fahrenheit :");
+	 double f=sc.nextDouble();
+	  double C= (f - 32) / 1.8 ;
+	  
+	  System.out.println("Celsius is : " + C+"c");
+	 		
+	}	
+	}
+
+___________________________________________________________________________________________________________________________________________________
+----------------------------------------------------------------------------------------------------------------------
+
+
+5. Write a Java program that reads a number in inches, converts it to meters.
+
+
+package Pr;
+import java.io.InputStream;
+import java.util.Scanner;
+public class Distance {
+	
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter Inch: ");
+		float inch= sc.nextFloat();
+		float meter = inch* 0.0245f;
+		System.out.println(inch +" inch = " + meter+ " meter");
+		
+ 		
+	}	
+	}
+
+______________________________________________________________________________________________________________________
+---------------------------------------------------------------------------------------------------------------------
+
+6. Write a Java program to convert minutes into a number of years and days.
+
+package Pr;
+import java.io.InputStream;
+import java.util.Scanner;
+public class Distance {
+	
+
+	public static void main(String[] args) {
+
+        double minutesInYear = 60 * 24 * 365;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Input the number of minutes: ");
+
+        double min = input.nextDouble();
+
+        long years = (long) (min / minutesInYear);
+        int days = (int) (min / 60 / 24) % 365;
+
+        System.out.println((int) min + " minutes is approximately " + years + " years and " + days + " days"); 		
+	}	
+	}
+
+________________________________________________________________________________________________________________________
+-------------------------------------------------------------------------------------------------------------------
+
+
+7. Take String input as Name of the city and convert it to reverse string and show on the console.
+
+package Pr;
+import java.io.InputStream;
+import java.util.Scanner;
+public class Distance {
+	
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter your city name : ");
+		String cityName= sc.next();
+		char rev;
+		String result=" ";
+		
+		for(int i=0;i<cityName.length();i++)
+		{
+			rev= cityName.charAt(i);
+			result= rev+ result;
+		}
+		System.out.println(result);
+ 		
+	}	
+	}
+
+______________________________________________________________________________________________________________
+--------------------------------------------------------------------------------------------------------------------
+
+
+8. Check if a string is pallindrome or not. eg. input : ABCBA "
+
+
+package Pr;
+import java.io.InputStream;
+import java.util.Scanner;
+public class Distance {
+	
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter String: ");
+		String Name= sc.next();
+		
+		char rev;
+		String result=" ";
+		
+		for(int i=0;i<Name.length();i++)
+		{
+			rev= Name.charAt(i);
+			result= rev+ result;
+		}
+		if(result.equals(Name)) {
+		   System.out.println("palindrome");
+		}
+		else
+		{
+			System.out.println("Not palindrome");
+		}
+ 		
+	}	
+	}
+
+
